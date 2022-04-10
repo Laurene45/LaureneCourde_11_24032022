@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap");
+.navlink {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  flex-wrap: nowrap;
+  transform: translateY(-50%);
+}
+.navlink_wrapper {
+  position: relative;
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: stretch;
+  padding: 1.25rem;
+}
+.navlink_wrapper img {
+  width: auto;
+  height: 2.625rem;
+}
+
+.navlink_link,
+.navlink_active {
+  margin-left: 0.625rem;
+  color: #ff6060;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-transform: uppercase;
+}
+
+.navlink_active {
+  text-decoration: underline;
+}
+
+.navlink_link {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
