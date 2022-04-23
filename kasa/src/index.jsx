@@ -8,8 +8,6 @@ import Error404 from './pages/Error'
 import Home from './pages/Home'
 import Location from './pages/Location'
 
-import Footer from './components/Footer'
-import Header from './components/Header'
 
 import './css/style.css';
 
