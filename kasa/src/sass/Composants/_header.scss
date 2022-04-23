@@ -1,0 +1,75 @@
+.Header{
+    display : flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .Navigation{
+        display: flex;
+        a{
+            display:flex;
+            align-items: center;
+            font-size: 24px;
+            color: $color-1;
+            text-align: center;
+
+            &.active{
+                h3{
+                    margin-left: 40px;
+                    border-bottom: $color-1 solid 1px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+            
+            h3{
+                margin-left: 40px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+    img{
+        text-align: center;
+        width: 150px;
+    }
+    // Responsive
+    @include laptop {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;  
+        padding-top: 10px;  
+        .Navigation{
+            a{
+                font-size: 18px;
+                h3{
+                    margin-left: 20px;
+                }
+            }
+            a.active{
+                h3{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    @include mobile {
+        .Navigation{
+            a{
+                font-size: 12px;
+                h3{
+                    margin-left: 10px;
+                }
+            }
+            a.active{
+                h3{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+   
+}
+

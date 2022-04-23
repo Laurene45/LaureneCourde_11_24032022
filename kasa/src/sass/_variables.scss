@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*font*/
+$font-1: "Montserrat", sans-serif;
+
+
+/*colors*/
+$color-1: #FF6060;
+$color-2: #000000;
+$color-3: #FFFFFF;
+$color-4: #F6F6F6;
+
+
+/*breakpoints*/
+$breakpoints: (
+    mobile-max: 425px,
+    tablet-max: 768px,
+    laptop-max: 1440px,
+    
+);

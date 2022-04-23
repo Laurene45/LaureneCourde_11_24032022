@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
-@import "./base";
+@import "./variables";
+@import "./settings";
+@import "./mixins";
+@import "./Composants/header";
+@import "./Composants/cards";
+@import "./Composants/footer";
+@import "./Pages/home";
