@@ -3,7 +3,17 @@
 @import "./variables";
 @import "./settings";
 @import "./mixins";
+
 @import "./Composants/header";
 @import "./Composants/cards";
 @import "./Composants/footer";
+@import "./Composants/tags";
+@import "./Composants/ratings";
+@import "./Composants/dropdown";
+@import "./Composants/carrousel";
+@import "./Composants/error";
+
 @import "./Pages/home";
+@import "./Pages/locations";
+
+

@@ -15,10 +15,12 @@
         }
     }
     .Section{
+        max-width: 1440px;
+        margin: auto;
         height: 200px;
         position: relative;
-        padding-left: 60px;
-        padding-right: 60px;
+        //padding-left: 60px;
+        //padding-right: 60px;
         h3{
             font-style: normal;
             font-weight: 500;
@@ -38,32 +40,36 @@
         }
     }
     .Cards{
+        max-width: 1440px;
+        margin: auto;
+        margin-top:2.5rem;
+        margin-bottom: 2.5rem;
         display: flex;
-        margin : 30px; 
-        padding: 40px 40px 40px 0px;
+        //margin : 30px; 
+        padding: 2.5rem 2.5rem 0rem 0rem;
         flex-wrap: wrap;
         justify-content: space-around ;
         background-color: $color-4;
         border-radius: 25px;
         a{
-            margin:20px;
+            margin:1.25rem;
         }
     }  
 
     // Responsive 
     @include laptop {
         .Section{
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 3.75rem;
+            padding-right: 3.75rem;
             h3{
                 font-size: 36px;
-                padding-left: 45px;
-                padding-right: 45px;
+                padding-left: 2.8rem;
+                padding-right: 2.8rem;
             }
         }
-        .Cards {
-            margin-left: 22px;
-            margin-right: 22px;
+        .Cards { 
+            margin-left: 3.75rem;
+            margin-right: 3.75rem;
             
         }
     }
@@ -80,19 +86,20 @@
       
     @include mobile {
         .Section{
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
             height: 120px;
             h3{
                 font-size: 24px;
-                padding-left: 30px;
-                padding-right: 180px;
+                padding-left: 1.8rem;
+                padding-right: 11.25rem;
             }
         }
         .Cards{
-            margin-top :20px;
-            margin-left: 25px;
-            margin-right: 25px;
+            background-color: $color-3;
+            margin: 0;
+            padding-top: 2.1rem;
+           
         }
     }
 }

@@ -1,35 +1,31 @@
 footer {
     width: 100%;
-    background-color: black;
+    background-color: $color-2;
     position: relative;
-  }
+}
   
 .logo-Footer {
-  width: 100%;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     .logo-Footer img {
         width: 6rem;
-    }
-    @include mobile {
-        .logo-Footer img {
+        @include mobile {
             width: 5rem;
-        }
+        } 
     }
 }
 
 .copyright {
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 500;
-  color: white;
-  padding-bottom: 2rem;
-  @include mobile {
-    .copyright {
-      font-size: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 2rem;
+    @include mobile {
+        font-size: 12px;
     }
-  }
 }
 

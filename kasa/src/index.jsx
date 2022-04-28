@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-
+import Location from './pages/Location'     
 //import App from './App';
 //import About from './pages/About'
-//import Error404 from './pages/Error'
-//import Location from './pages/Location'
+import Error404 from './pages/Error'
+
 //import Footer from './components/Footer'
 //import Header from './components/Header'
 
@@ -26,24 +26,15 @@ import './sass/main.scss';
 
 ReactDOM.createRoot(
   document.getElementById('root')
-).render(<Router>
-  <Routes>
-    <Route exact path="/" element={<Home />} /> 
+  ).render(
+  <Router>
+    <Routes>
+      <Route exact path="/" element={<Home />} /> 
+      <Route path="/housing/:id" element={<Location />}/>
 
-  </Routes>
-  
-</Router>,);
+      <Route path='*' element={<Error404 />} />
+      
 
-
-
-
-/*<Route path="/about">
-        <About />
-      </Route>
-      <Route path="/location">
-        <Location />
-      </Route>
-      <Route path="*">
-        <Error404 />
-      </Route>
-    <Footer />*/
+    </Routes>
+  </Router>,
+);

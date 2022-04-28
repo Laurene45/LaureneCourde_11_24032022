@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 // entrées d’un composant React. Elles sont passées d’un composant parent à un composant enfant.
 // props en lecture seule
 
+/* 
+ * @param {*} props création composant Gallery 
+ * @returns Card comportant des logements en miniatures 
+ */
 
 function Card(props) {
 	return (

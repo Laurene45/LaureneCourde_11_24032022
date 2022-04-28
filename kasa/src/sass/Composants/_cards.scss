@@ -1,29 +1,31 @@
-
-
 .Card{
     width: 380px;
     height: 300px;
-    padding-bottom: 35px;
+    padding-bottom: 2.1rem;
     color:$color-3;
     position: relative;
     
     // Responsive
     @include tablet {
-        width: 310px;
+        width: 280px;
         height: 250px;
     }    
+    @include mobile {
+        width: 380px;
+        height: 300px;
+    }
     .CardTitle{
         position: absolute;
         bottom: 20px;
         left: 20px;
-        margin-right: 20px;
+        margin-right: 1.25rem;
         text-align:start;
         h3 {
           color: $color-3;
           font-weight: 500;
           font-size : 18px;
-          padding-bottom: 25px;
-          padding-left: 10px;
+          padding-bottom: 1.5rem;
+          padding-left: 0.6rem;
         
         }
     }

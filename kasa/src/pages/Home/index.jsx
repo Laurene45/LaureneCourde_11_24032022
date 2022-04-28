@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../../components/Header";
 import banner1 from "../../assets/banner1.png"
-import housing from "../../data/logements.json";
+import { housing } from '../../data/logements';
 import Card from "../../components/Cards";
 import Footer from "../../components/Footer";
 
@@ -33,13 +33,10 @@ const Home = () => {
 						cover={housing.cover}
 					/>
 				))}
-
-				
 			</div>
-          
         <Footer/>
       </div>
     );
-  };
+};
   
-  export default Home;
+export default Home;

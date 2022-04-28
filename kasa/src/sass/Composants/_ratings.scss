@@ -1,0 +1,21 @@
+.star{
+    width: 30px;
+    height: 30px;
+    @include tablet {
+        height: 17px;
+        width: auto;
+    }
+    @include mobile {
+        height: 15px;
+        width: auto;
+    }
+}
+
+.filled{
+    color: $color-1;
+}
+
+.empty{
+    color: $color-5;
+}
+
