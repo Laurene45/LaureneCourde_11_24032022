@@ -1,10 +1,11 @@
-.tag{
+.tag {
     border-radius: 10px;
     background-color: $color-1;
     width: auto;
     height: 25px;
     padding: .2rem 1rem;
-    &__name{
+
+    &__name {
         font-style: normal;
         font-size: 14px;
         color: $color-3;
@@ -16,8 +17,9 @@
         justify-content: center;
         margin: 0;
         padding-bottom: 5px;
+
         @include mobile {
-            font-size : 10px;
+            font-size: 10px;
         }
     }
 }

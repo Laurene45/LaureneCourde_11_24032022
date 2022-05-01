@@ -1,61 +1,75 @@
-.carrousel{
+.carrousel {
     display: flex;
     align-items: center;
     position: relative;
     margin: auto;
     max-width: 1440px;
+
     @include laptop {
         padding-left: 3.75rem;
         padding-right: 3.75rem;
     }
+
     @include mobile {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
-        
+
     }
-    &__image{
+
+    &__image {
         width: 1440px;
         height: 415px;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         border-radius: 25px;
         display: block;
         margin: auto;
+
         @include tablet {
             height: 300px;
+            width: 100%;
         }
+
         @include mobile {
             width: 385px;
             height: 255px;
             margin: 0;
         }
+
         @include mobile2 {
             width: 335px;
         }
     }
-    &__chevronLeft{
+
+    &__chevronLeft {
         left: 70px;
         font-size: 48px;
+
         @include tablet {
             font-size: 38px;
         }
+
         @include mobile {
             left: 40px;
             font-size: 28px;
         }
     }
-    &__chevronRight{
+
+    &__chevronRight {
         right: 70px;
         font-size: 48px;
+
         @include tablet {
             font-size: 38px;
         }
+
         @include mobile {
             right: 40px;
             font-size: 28px;
         }
     }
-    &__index{
+
+    &__index {
         position: absolute;
         bottom: 30px;
         left: 50%;
@@ -63,19 +77,15 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
+
         @include mobile {
             display: none;
         }
     }
 }
 
-.chevron{
+.chevron {
     position: absolute;
     color: $color-3;
     cursor: pointer;
 }
-
-
-
-
-

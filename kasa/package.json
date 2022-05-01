@@ -7,12 +7,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "prettier": "^2.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1",
     "react-router-dom": "^0.0.0-experimental-compat.6",
     "react-scripts": "5.0.0",
     "sass": "^1.50.0",
@@ -21,6 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "sass --watch ./src/sass/main.scss:./src/css/style.css -w --style compressed"
@@ -29,7 +34,12 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "plugin": "react/recommended",
+    "rules": {
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error"
+    }
   },
   "browserslist": {
     "production": [
@@ -44,7 +54,9 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.13.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.6.2",
     "source-map-loader": "^3.0.1"
   }
 }

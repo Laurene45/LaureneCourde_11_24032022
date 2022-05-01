@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
 
 .navlink {
@@ -8,19 +7,21 @@
 	right: 1.25rem;
 	flex-wrap: nowrap;
 	transform: translateY(-50%);
-    &_wrapper {
-        position: relative;
-        width: 100%;
-        width: -moz-available;
-        width: -webkit-fill-available;
-        width: stretch;
-        padding: 1.25rem; 
-        
-    }
-    &_wrapper img {
-        width: auto;
-	    height: 2.625rem;
-    }
+
+	&_wrapper {
+		position: relative;
+		width: 100%;
+		width: -moz-available;
+		width: -webkit-fill-available;
+		width: stretch;
+		padding: 1.25rem;
+
+	}
+
+	&_wrapper img {
+		width: auto;
+		height: 2.625rem;
+	}
 }
 
 .navlink_link,

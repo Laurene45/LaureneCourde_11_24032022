@@ -3,17 +3,19 @@ footer {
     background-color: $color-2;
     position: relative;
 }
-  
+
 .logo-Footer {
     width: 100%;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
+
     .logo-Footer img {
         width: 6rem;
+
         @include mobile {
             width: 5rem;
-        } 
+        }
     }
 }
 
@@ -24,8 +26,8 @@ footer {
     font-weight: 500;
     color: white;
     padding-bottom: 2rem;
+
     @include mobile {
         font-size: 12px;
     }
 }
-

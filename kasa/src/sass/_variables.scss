@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /*font*/
-$font-1: "Montserrat", sans-serif;
+$font-1: "Montserrat",
+sans-serif;
 
 
 /*colors*/
@@ -14,10 +15,9 @@ $color-6: #F7F7F7;
 
 
 /*breakpoints*/
-$breakpoints: (
-    mobile2-max: 375px,
+$breakpoints: (mobile2-max: 375px,
     mobile-max: 425px,
     tablet-max: 768px,
     laptop-max: 1440px,
-    
+
 );

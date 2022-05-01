@@ -1,20 +1,24 @@
+// eslint-disable-next-line
+import React from 'react';
 import PropTypes from 'prop-types';
 
 /*
- * props création composant Tag 
+ * props création composant Tag
  * @returns retourne le nom du tag
  */
 
-const Tag = (props) => {
-    return(
-        <div className="tag">
-            <p className='tag__name'>
-                {props.name}
-            </p>
-        </div>
-    )
-}
+//  A Faire : changer props par la destructuration
 
-Tag.propTypes={name:PropTypes.string,}
+const Tag = ({ name }) => {
+  return (
+    <div className="tag">
+      <p className="tag__name">{name}</p>
+    </div>
+  );
+};
 
-export default Tag
+Tag.propTypes = {
+  name: PropTypes.string,
+};
+
+export default Tag;

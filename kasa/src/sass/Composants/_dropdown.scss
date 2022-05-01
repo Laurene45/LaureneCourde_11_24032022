@@ -1,4 +1,4 @@
-.dropdown{
+.dropdown {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,81 +6,91 @@
     background: $color-1;
     border-radius: 5px;
     cursor: pointer;
+
     @include tablet {
         height: 40px;
     }
+
     @include mobile {
         height: 30px;
     }
-    &__name{
+
+    &__name {
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         color: $color-3;
         padding-left: 1rem;
+
         @include tablet {
             font-size: 15px;
         }
+
         @include mobile {
-            font-size : 13px;
+            font-size: 13px;
         }
     }
-    &__icon{
+
+    &__icon {
         color: $color-3;
         margin-right: 1rem;
     }
-    &__open{
+
+    &__open {
         transform: rotate(180deg);
     }
-    &__list{
+
+    &__list {
         display: flex;
         flex-direction: column;
         background: $color-6;
         border-radius: 10px;
         padding: 1rem 0 1rem 0;
-        
+
     }
-    &__elementName{
+
+    &__elementName {
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        color:$color-1;
+        color: $color-1;
         list-style-type: none;
-        padding-left : 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
         @include tablet {
-            font-size : 15px;
+            font-size: 15px;
         }
+
         @include mobile {
-            font-size : 12px;
+            font-size: 12px;
         }
     }
-    &__content{
+
+    &__content {
         background: $color-6;
         border-radius: 5px;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        color:$color-1;
+        color: $color-1;
         padding-left: 1rem;
         padding-right: 0.6rem;
+
         @include tablet {
             font-size: 15px;
         }
+
         @include mobile {
             font-size: 12px;
         }
     }
 }
 
-.closed{
+.closed {
     display: none;
 }
 
-.open{
+.open {
     display: block;
 }
-
-
-
-
-
