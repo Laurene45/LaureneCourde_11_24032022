@@ -610,9 +610,14 @@ footer {
   max-width: 1440px;
   margin: auto;
   height: 200px;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
   padding-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
