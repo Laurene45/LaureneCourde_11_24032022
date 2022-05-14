@@ -35,10 +35,6 @@
             height: 255px;
             margin: 0;
         }
-
-        @include mobile2 {
-            width: 335px;
-        }
     }
 
     &__chevronLeft {

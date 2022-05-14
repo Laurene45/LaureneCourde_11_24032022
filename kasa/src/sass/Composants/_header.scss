@@ -17,9 +17,9 @@
     }
 
     @include mobile {
-        padding-top: 1.25rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-top: 1.4rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
     }
 
     .Navigation {
@@ -72,7 +72,7 @@
         }
     }
 
-    img {
+    .logo {
         text-align: center;
         width: 150px;
     }

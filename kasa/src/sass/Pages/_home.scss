@@ -1,46 +1,4 @@
 .Home {
-    .Banner {
-        display: flex;
-        height: 98%;
-        width: 100%;
-        position: relative;
-        -webkit-filter: brightness(0.7);
-        filter: brightness(0.7);
-
-        img {
-            width: 100%;
-            background-size: 100%;
-            border-radius: 25px;
-            -o-object-fit: cover;
-            object-fit: cover;
-        }
-    }
-
-    .Section {
-        max-width: 1440px;
-        margin: auto;
-        height: 200px;
-        position: relative;
-
-        h3 {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 142.6%;
-            display: flex;
-            width: 100%;
-            color: $color-3;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
     .Cards {
         max-width: 1440px;
         margin: auto;
@@ -53,60 +11,19 @@
         background-color: $color-4;
         border-radius: 25px;
 
-        a {
-            margin: 1.25rem;
-        }
-    }
-
-    // Responsive 
-    @include laptop {
-        .Section {
-            padding-left: 3.75rem;
-            padding-right: 3.75rem;
-
-            h3 {
-                font-size: 36px;
-                padding-left: 2.8rem;
-                padding-right: 2.8rem;
-            }
-        }
-
-        .Cards {
+        @include laptop {
             margin-left: 3.75rem;
             margin-right: 3.75rem;
-
-        }
-    }
-
-    @include tablet {
-        .Section {
-            height: 180px;
-
-            h3 {
-                font-size: 30px;
-            }
-        }
-    }
-
-
-    @include mobile {
-        .Section {
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
-            height: 120px;
-
-            h3 {
-                font-size: 24px;
-                padding-left: 1.8rem;
-                padding-right: 11.25rem;
-            }
         }
 
-        .Cards {
+        @include mobile {
             background-color: $color-3;
             margin: 0;
             padding-top: 2.1rem;
+        }
 
+        a {
+            margin: 1.25rem;
         }
     }
 }

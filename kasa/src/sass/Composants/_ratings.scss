@@ -1,6 +1,7 @@
-.star{
+.star {
     width: 30px;
     height: 30px;
+
     @include tablet {
         height: 17px;
         width: auto;
@@ -8,12 +9,9 @@
 }
 
 .filled {
-    color : $color-1
+    color: $color-1
 }
-
 
 .empty {
-    color : $color-5;
+    color: $color-5;
 }
-
-

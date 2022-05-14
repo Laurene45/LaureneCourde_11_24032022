@@ -1,8 +1,12 @@
-// eslint-disable-next-line
-import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+/*
+ * @param {object} props charge les étoiles
+ * @param {integer} props.star > number of stars
+ * @returns rating
+ */
 
 const Rating = (star) => {
   const rate = parseInt(star.rate);

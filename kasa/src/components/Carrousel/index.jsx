@@ -1,19 +1,15 @@
-// eslint-disable-next-line
-import React from 'react';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight,} from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft,faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
 /*
- * @param {*} props charge le composant Carrousel
+ * @param {object} props charge le carrousel
+ * utilisation de setState() / useState()
  * @returns Carrousel
  */
 
 const Carrousel = ({ pictures }) => {
-  // setState() planifie des modifications à l’état local du composant, et indique à React que ce composant et ses enfants ont besoin d’être rafraîchis une fois l’état mis à jour.
-  //C’est en général ainsi qu’on met à jour l’interface utilisateur en réaction à des événements ou réponses réseau.
-
   const [activeIndex, setActiveIndex] = useState(0);
   const className = pictures.length > 1 ? '' : 'none';
   const previous = () => {
@@ -27,12 +23,12 @@ const Carrousel = ({ pictures }) => {
     );
   };
 
-  //onClick : gestion des évènements
   return (
     <section className="carrousel">
       <FontAwesomeIcon
         icon={faChevronLeft}
         className={`carrousel__chevronLeft chevron ${className}`}
+        //gestion des évènements
         onClick={previous}
       />
       <img

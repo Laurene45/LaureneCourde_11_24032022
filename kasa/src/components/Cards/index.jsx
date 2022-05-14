@@ -1,26 +1,19 @@
-// eslint-disable-next-line
-import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-
-// Composant fonctionnel : simple fonction JavaScript qui renvoie du JSX.
-// Utilisation de props pour les cards via Home
-
-// Props : Dans un composant fonctionnel, les propriétés sont passées comme argument de la fonction.
-// entrées d’un composant React. Elles sont passées d’un composant parent à un composant enfant.
-// props en lecture seule
-
 /*
- * @param {*} props création composant Gallery
- * @returns Card comportant des logements en miniatures
+ * @param {object} props charge les cards
+ * @param {string} props.link > get link
+ * @param {string} props.title > rental ad title
+ * @param {string} props.cover > cover picture url
+ * @returns Card comportant des logements miniatures
  */
 
 function Card({ link, cover, title }) {
   return (
     <div className="Card">
-      <Link to={link}>
-        <img src={cover} alt="Logement" />
+      <Link to={link} className="link">
+        <img src={cover} className="image_Card" alt="Logement" />
         <div className="CardTitle">
           <h3>{title}</h3>
         </div>
